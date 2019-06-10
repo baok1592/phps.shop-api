@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-address": "../../../component/qy/address/index",
+    "i-button": "../../../component/iview/button/index"
+  }
+}

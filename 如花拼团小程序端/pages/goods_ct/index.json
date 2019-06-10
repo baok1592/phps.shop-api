@@ -1,0 +1,5 @@
+{
+  "usingComponents": { 
+    "v-ping-detail": "../../../component/qy/pin-detail/index"
+  }
+}

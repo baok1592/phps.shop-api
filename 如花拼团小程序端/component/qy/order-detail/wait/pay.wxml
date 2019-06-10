@@ -1,0 +1,22 @@
+<view class="pay">
+  <view class='pay_01' wx:if="{{flag}}">
+    <view class='pay_01_01'>
+      <icon type='success' size='25' color='#ffffff'></icon>
+    </view>
+    <view class='pay_01_02'>
+      <view class='pay_01_02_01'>等待买家付款</view>
+      <view class="time-box">
+      <view class='pay_01_02_02'>请于</view>
+      <i-count-down target="{{targetTime}}" clear-timer="{{clearTimer}}"></i-count-down>
+      <view class='pay_01_02_02'>内付款，超时将关闭</view>
+      </view>
+    </view>
+  </view>
+  <view wx:else class="H20"></view>
+  <wux-steps current="{{ step }}">
+    <wux-step title="买家付款"></wux-step>
+    <wux-step title="等待拼团"></wux-step>
+    <wux-step title="商家发货"></wux-step>
+    <wux-step title="交易完成"></wux-step>
+  </wux-steps>
+</view>

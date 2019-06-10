@@ -1,0 +1,6 @@
+<v-address list="{{list}}" bind:del="del" bind:edit="edit" bind:setd="setDefault" bind:sstd="selectdefault"></v-address>
+
+<view class='H20'></view>
+<view class='add'>
+   <i-button bind:click="jump" type="error" shape="circle" >新增</i-button>   
+</view>

@@ -1,0 +1,22 @@
+<view class="order">  
+  <view><icon type="success" size='15' class='sss'></icon>积分</view>
+  <view class='order_r'>></view>
+</view>
+<view class="order">  
+  <view>余额 </view>
+  <view class='order_r'>></view>
+</view>
+<view class="order">  
+  <view><icon type="success" size='15' class='sss'></icon>红包 </view>
+  <view class='order_r'>></view>
+</view>
+<view class="order">  
+  <view><icon type="success" size='15' class='sss'></icon>旅途卡 </view>
+  <view class='order_r'>></view>
+</view>
+<view class='H10'></view>
+<view class="order">  
+  <view><icon type="success" size='15' class='sss'></icon>客服</view>
+  <view class='order_r'>></view>
+</view>
+<view class='H10'></view>

@@ -1,0 +1,40 @@
+<view class='{{class_name}}'>
+  <block wx:for="{{list}}" wx:key="">
+  <block wx:if="{{catestyle==''}}">
+    <view class="goods {{index%3==0?'line-big':''}}">
+      <view bindtap='jump' data-id="{{item.goods_id}}">
+        <image src='{{item.imgs}}'></image>
+      </view>
+      <view class='goods_02'>
+        <view class='goods_title'>{{item.goods_name}}</view>
+        <view class='good_p'>
+          <view>¥ {{item.price}}</view>
+          <view wx:if="{{item.style==1}}" class='i' bindtap='jump' data-id="2">
+            <!-- <i-icon type="commodity" size="24" /> -->
+          </view>          
+          <view wx:else class="btn" bindtap='jump' data-id="{{item.goods_id}}">拼团</view> 
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view wx:if="{{item.style==catestyle}}" class="goods {{index%3==0?'line-big':''}}">
+      <view bindtap='jump' data-id="{{item.goods_id}}">
+        <image src='{{item.imgs}}'></image>
+      </view>
+      <view class='goods_02'>
+        <view class='goods_title'>{{item.goods_name}}</view>
+        <view class='good_p'>
+          <view>¥ {{item.price}}</view>
+          <view wx:if="{{item.style==1}}" class='i' bindtap='jump' data-id="2">
+            <!-- <i-icon type="commodity" size="24" /> -->
+          </view>          
+          <view wx:else class="btn" bindtap='jump' data-id="{{item.goods_id}}">去拼团</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  </block>
+</view> 
+
+ 

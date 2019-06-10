@@ -1,0 +1,6 @@
+.favorite{
+  margin: 24rpx 0rpx;
+}
+.tags{
+  padding-top:20rpx;
+}

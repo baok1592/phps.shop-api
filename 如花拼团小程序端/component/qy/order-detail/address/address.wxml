@@ -1,0 +1,17 @@
+<view class="address">
+  <view wx:if="{{address}}" class="box">
+    <view class='address_01'>
+      <i-icon class="icon" type="coordinates" size="28" />
+    </view>
+    <view class='address_02'>
+      <view class='address_02_01'>
+        <view class='address_02_01_01'>收货人：{{address.name}}</view>
+        <view class='address_02_01_02'>{{address.mobile}}</view>
+      </view>
+      <view class='address_02_02'>{{address.city}} {{address.detail}}</view>
+    </view>
+  </view>
+  <view wx:else class="add">
+      添加地址
+  </view>
+</view>

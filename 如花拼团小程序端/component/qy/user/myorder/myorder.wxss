@@ -1,0 +1,6 @@
+.myorder{padding: 5rpx 20rpx;}
+.more{display: flex;justify-content: space-between;border-bottom: 2rpx solid #f0f0f0;line-height: 80rpx;}
+.more_r{color: #ACACAC;font-size: 12px;}
+.state{padding: 30rpx 0;display: flex;}
+.state_01{width: 25%;text-align: center;padding-top:12rpx; }
+.info{padding-top:18rpx; }

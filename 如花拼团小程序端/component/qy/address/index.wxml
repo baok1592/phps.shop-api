@@ -1,0 +1,23 @@
+<block wx:for="{{list}}" wx:key="id">
+  <view class="address">
+    <view class='address_01'>{{item.name}} {{item.mobile}}</view>
+    <view class='address_02'>{{item.city}}{{item.country}}{{item.detail}}</view>
+    <view class='address_03'>
+      <view class='address_03_01' wx:if="{{item.is_default}}" bindtap='selectDefault' data-id="{{item.id}}">
+        <i-icon type="success" size='24' style="color:{{item.is_default?'red':''}}"/>
+        <text decode="true"  style="color:red">&nbsp;默认地址</text>       
+      </view>
+       <view class='address_03_01' wx:else bindtap='setDefault' data-id="{{item.id}}">
+        <i-icon type="success" size='24' style="color:{{item.is_default?'red':''}}"/> 
+        <text decode="true">&nbsp;设为默认</text>         
+      </view>
+
+      <view class='address_03_02'>
+        <i-icon type="editor" size='24' bindtap='edit' data-id="{{item.id}}" />
+        <text decode="true">&emsp;</text>
+        <i-icon size='24' type="delete" bindtap='del' data-id="{{item.id}}" />
+      </view>
+    </view>
+  </view>
+</block>
+ 

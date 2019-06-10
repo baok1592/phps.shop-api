@@ -1,0 +1,4 @@
+<view class="container">
+<view class="title">{{title}}</view>
+<view class="more" bindtap="jump">更多</view>
+</view>

@@ -1,0 +1,125 @@
+.tag-a .goods {
+  margin: 20rpx;
+  background-color: #fff;
+  padding: 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius:20rpx;
+}
+
+.tag-b, .tag-a, .tag-e, .tag-c, .tag-d {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-b .goods, .tag-c .goods {
+  margin: 10rpx;
+  width: 47%;
+  background-color: #fff;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+.tag-e .goods {
+  display: flex;
+  border: 2rpx solid #d0d0d0;
+  margin: 10rpx;
+  width: 100%;
+  background-color: #fff;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+.tag-e .goods image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.tag-e .goods_02 {
+  width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 160rpx;
+  justify-content: space-between;
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+}
+
+.tag-e .goods_title, .tag-d .goods_title {
+  height: 120rpx;
+  overflow: hidden;
+  line-height: 35rpx;
+}
+
+.tag-d .goods {
+  width: 30%;
+  box-sizing: border-box;
+  margin: 20rpx 1.5%;
+}
+
+.tag-d .goods image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.tag-d .i {
+  display: none;
+}
+
+.tag-a .goods_title, .tag-c .goods_title {
+  height: 40rpx;
+  overflow: hidden;
+  line-height: 40rpx;
+  margin:20rpx 0;
+}
+
+.tag-b .goods image{
+  width: 100%;
+  height: 300rpx;
+}
+
+.tag-a .goods image, .tag-c image {
+  width: 100%;
+  height: 380rpx;
+}
+
+.tag-b .good_p, .tag-a .good_p, .tag-c .good_p, .tag-e .good_p, .tag-d .good_p {
+  display: flex;
+  color: red;
+  line-height: 50rpx;
+  justify-content: space-between;
+}
+
+.tag-c .line-big {
+  width: 100%;
+}
+.tag-b .goods_02{
+  padding: 0 20rpx;
+}
+.tag-b .goods_title{
+  height: 40rpx;
+  overflow: hidden;
+  line-height: 40rpx; 
+  margin:15rpx 0; 
+}
+.tag-b .btn { 
+  color: #fff;
+  background-color: #ED3F14;
+  height: 46rpx;
+  line-height: 46rpx;
+  padding: 0rpx 20rpx;
+  border-radius: 12rpx; 
+  margin-top: 10rpx;
+  font-size:28rpx
+}
+.tag-a .btn{ 
+  color: #fff;
+  background-color: #ED3F14;
+  height: 56rpx;
+  line-height: 56rpx;
+  padding: 0rpx 20rpx;
+  border-radius: 12rpx; 
+  margin-top: 10rpx;
+  font-size:36rpx
+}

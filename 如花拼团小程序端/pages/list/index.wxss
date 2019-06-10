@@ -1,0 +1,11 @@
+page{
+  background: #F5F5F5;
+}
+.top{
+  position:fixed;
+  top:0px;
+  width:100%;
+}
+.list{
+  padding-top:100rpx;
+}

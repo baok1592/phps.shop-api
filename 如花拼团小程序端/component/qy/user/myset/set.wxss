@@ -1,0 +1,2 @@
+.set{padding: 20rpx; display: flex;flex-wrap: wrap;justify-content: space-around;}
+.set_01{width: 25%;text-align: center;padding-bottom: 40rpx;}

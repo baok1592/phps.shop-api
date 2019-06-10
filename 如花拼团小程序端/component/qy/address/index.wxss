@@ -1,0 +1,11 @@
+page{background-color: #F9F9F9;}
+.address{background-color: #ffffff;border-bottom: 2rpx #EFEFEF solid;padding: 20rpx 30rpx;margin-bottom: 20rpx;}
+.address_01{font-size: 16px;line-height: 50rpx;}
+.address_02{color: #909090;border-bottom: 2rpx #EFEFEF dashed ;line-height: 60rpx;}
+.address_03{display: flex;justify-content: space-between;padding-top: 20rpx;}
+ 
+.address_03_01{
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}

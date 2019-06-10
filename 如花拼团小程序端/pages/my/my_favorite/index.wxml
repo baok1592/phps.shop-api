@@ -1,0 +1,23 @@
+<view class="favorite" wx:for="{{list}}" wx:key="id">  
+<van-card price="{{item.product.price}}"  title="{{item.product.goods_name}}" thumb="{{item.imgs}}" 
+  thumb-link="../../goods/index?id={{item.fav_id}}" >
+  <view slot="tags" class="tags">  
+    <van-tag type="danger" wx:if="{{tool.count(item.price,item.product.price)}}">比关注时降￥{{tool.count(item.price,item.product.price)}}</van-tag>
+  </view>
+  <view slot="footer"> 
+    <van-button size="mini" bindtap='jump' data-id="{{item.fav_id}}">去购买</van-button>
+  </view>
+</van-card> 
+</view>  
+
+<wxs module="tool">
+    var count = function(f,p){
+        var price = f - p
+        if(price>0){
+            return price
+        }else{
+            return false
+        }
+    }
+    module.exports = { count:count }
+</wxs>

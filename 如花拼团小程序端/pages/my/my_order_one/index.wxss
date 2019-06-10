@@ -1,0 +1,18 @@
+.bottom-btn{
+  text-align: right;
+  padding:30rpx 20rpx;
+}  
+.bggrey{ 
+  background: #FAFAFA;
+}
+.bggrey-line{
+  margin:10rpx 0 ;
+  border-bottom:1px dashed #ccc; 
+}
+.steps{
+  padding:40rpx 0 20rpx;
+}
+.pj_btn{
+  text-align: center;
+  margin-top:20px;
+} 

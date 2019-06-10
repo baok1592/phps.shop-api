@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-card": "../../../component/vant/card/index",
+    "van-tag": "../../../component/vant/tag/index",
+    "van-button": "../../../component/vant/button/index"
+  }
+}

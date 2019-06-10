@@ -1,0 +1,12 @@
+<view class="footer">
+  <view class='footer_01'>
+    <icon type='success'></icon>
+    <view>首页</view>
+  </view>
+  <view class='footer_01'>
+    <icon type='success'></icon>
+    <view>购物车</view>
+  </view>
+  <view class='footer_03'>加入购物车</view>
+  <view class='footer_04'>立即购买</view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-panel": "../../../component/vant/panel/index",
+    "van-button": "../../../component/vant/button/index", 
+    "van-card": "../../../component/vant/card/index",
+    "i-tabs": "../../../component/iview/tabs/index",
+    "i-tab": "../../../component/iview/tab/index"
+  }
+}

@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  position: fixed;
+  bottom: 100rpx;
+  width: 100%;
+  border-top: 2rpx solid #f0f0f0;
+  line-height: 100rpx;
+  font-size: 16px;
+  padding: 0 20rpx;
+  background-color: #fff;
+  z-index: 9999
+}
+
+.sss {
+  padding-right: 20rpx;
+}
+
+.footer_01 {
+  display: flex;
+}
+
+.footer_01_01 {
+  padding: 6rpx 20rpx 0 0;
+}
+
+.footer_02 {
+  display: flex;
+}
+
+.footer_02_01 span {
+  color: #ff7101;
+  padding-right: 20rpx;
+}
+
+.footer_02_02 {
+  background-color: #ff7101;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 90rpx;
+}

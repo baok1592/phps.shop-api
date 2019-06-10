@@ -1,0 +1,1 @@
+<v-ping-detail item="{{cache}}" bind:xiadan="xiadan"></v-ping-detail>

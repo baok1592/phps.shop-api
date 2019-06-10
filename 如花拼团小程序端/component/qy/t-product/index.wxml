@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="pic" bindtap='jump' data-id="{{info.goods_id}}"><image src="{{info.imgs}}" /></view>
+  <view class="desc">
+    <view class="title">{{info.goods_name}}</view>    
+    <view>单独购买：¥{{info.market_price}}</view> 
+
+    <view class="price-btn">  
+        <text>{{info.people}}人团 ¥{{info.price}}</text>
+        <view class="btn" bindtap='jump' data-id="{{info.goods_id}}">去拼团</view>  
+    </view>
+  </view>
+</view>

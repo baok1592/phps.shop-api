@@ -1,0 +1,122 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "wx40342b8063b72fc1",
+	"projectname": "%E6%96%B0%E7%89%88%E6%8B%BC%E5%9B%A2",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "cart",
+					"pathName": "pages/cart/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "category",
+					"pathName": "pages/category/index",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "my_order_all",
+					"pathName": "pages/my/my_order_all/index",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "my_order_one",
+					"pathName": "pages/my/my_order_one/index",
+					"query": "id=29"
+				},
+				{
+					"id": 5,
+					"name": "goods",
+					"pathName": "pages/goods/index",
+					"query": "id=15"
+				},
+				{
+					"id": 6,
+					"name": "list",
+					"pathName": "pages/list/index",
+					"query": "type=pt"
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "favorite",
+					"pathName": "pages/my/my_favorite/index",
+					"query": "id=16"
+				},
+				{
+					"id": -1,
+					"name": "address",
+					"pathName": "pages/my/my_address/index",
+					"query": "id=16"
+				},
+				{
+					"id": -1,
+					"name": "create_address",
+					"pathName": "pages/my/my_address/create_address/index",
+					"query": "id=16"
+				},
+				{
+					"id": 11,
+					"name": "pay",
+					"pathName": "pages/pay/index",
+					"query": "type=pt"
+				},
+				{
+					"id": -1,
+					"name": "pay_shopping",
+					"pathName": "pages/pay_shopping/index",
+					"query": "id=4"
+				}
+			]
+		}
+	}
+}

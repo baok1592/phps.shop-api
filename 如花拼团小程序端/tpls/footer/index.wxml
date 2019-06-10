@@ -1,0 +1,8 @@
+<template name="footer">
+<i-tab-bar current="{{ current }}" color="#EA0000" fixed="true" bindchange="handleChange">
+    <i-tab-bar-item key="index" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item> 
+    <i-tab-bar-item key="list" icon="barrage" current-icon="barrage_fill" title="分类"></i-tab-bar-item>
+    <i-tab-bar-item key="cart" icon="publishgoods_fill" current-icon="publishgoods_fill" count="{{cartnum}}" title="购物车"></i-tab-bar-item>
+    <i-tab-bar-item key="my" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>
+</template> 

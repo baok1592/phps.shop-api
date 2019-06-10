@@ -1,0 +1,50 @@
+/* components/head/head.wxss */
+
+.tag-a .head {
+  background: url();
+  height: 220rpx;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+  padding-top: 80rpx;
+}
+
+.tag-a .head image, .tag-b .head image, .tag-c .head image {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 80rpx;
+  text-align: center;
+  border: 6rpx solid #fff;
+  box-shadow: 2px 2px 5px #272727;
+}
+
+.tag-b .head {
+  background-color: #e02e24;
+  padding: 80rpx;
+  height: 140rpx;
+  color: #fff;
+  display: flex;
+}
+
+.tag-b .name {
+  padding-left: 20rpx;
+  line-height: 50rpx;
+}
+
+.tag-c .head {
+  display: flex;
+  height: 160rpx;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60rpx 0 40rpx;
+}
+
+.tag-c .name {
+  width: 100%;
+  text-align: center;
+}
+
+.tag-a .head_l, .tag-c .head_l {
+  display: none;
+}

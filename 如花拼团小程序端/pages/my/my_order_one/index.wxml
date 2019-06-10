@@ -1,0 +1,71 @@
+<view class="bg">
+  <view class="steps">
+    <wux-steps current="{{ step }}">
+      <wux-step title="买家付款"></wux-step>
+      <wux-step title="等待拼团" wx:if="{{type}}"></wux-step>
+      <wux-step title="商家发货"></wux-step>
+      <wux-step title="交易完成"></wux-step>
+    </wux-steps>
+  </view>
+  <v-address address="{{address}}"></v-address>
+  <view class="white-block"></view>
+  <van-panel title="订单编号:{{order_num}}">
+    <view class="bggrey">
+      <view bindtap='jump_product' wx:for="{{ordergoods}}" wx:key="">
+        <view class="bggrey-line" wx:if="{{index>0}}"> </view>
+        <van-card num="{{item.num}}" price="{{item.price}}" desc="{{item.sku_name}}" title="{{item.goods_name}}" thumb="{{item.imgs.url}}" />
+      </view>
+    </view>
+  </van-panel>
+
+  <view wx:if="{{drive_status>0}}" class="bottom-btn">
+    <van-button type="default" size="small">查看物流 </van-button>
+  </view>
+  <view wx:else class="white-block"></view>
+
+  <van-cell-group>
+    <van-cell title="下单时间" value="{{create_time}}" />
+    <van-cell wx:if="{{shipping_money>0}}" title="运费" value="{{shipping_money}} 元" />
+    <van-cell wx:else title="运费" value="免运费" />
+  </van-cell-group>
+
+
+  <view wx:if="{{pay_status==0}}">
+    <van-submit-bar price="{{total}}" button-text="去支付" bind:submit="onPay" />
+  </view>
+  <block wx:if="{{tui}}" wx:for="{{tui}}">
+    <van-cell wx:if="{{item.status==0}}" title="退款申请中" value="{{item.create_time}}" />
+    <van-cell wx:if="{{item.status==1}}" title="退款成功" value="{{item.create_time}}" />
+    <van-cell wx:if="{{item.status==-1}}" title="退款失败" value="{{item.remark}}" />
+  </block>
+  <view class="pj_btn" wx:if="{{pay_status==1 && drive_status==0 && tui_status==0}}">
+    <van-button round type="warning" size="small" bindtap='jump_tui'>申请退款</van-button>
+  </view>
+</view>
+
+<view wx:if="{{receive_status}}">
+  <view wx:if="{{evaluate_status}}">
+    <wux-cell title="评价" hover-class="none">
+      <wux-rater slot="footer" default-value="{{rate.rate}}" disabled />
+    </wux-cell>
+    <van-cell-group>
+      <van-field value="{{rate.content }}" type="textarea" disabled autosize border="{{ false }}" />
+    </van-cell-group>
+  </view>
+
+  <view wx:else>
+    <wux-cell title="评价" hover-class="none">
+      <wux-rater slot="footer" default-value="0" bind:change="rate_fun" />
+    </wux-cell>
+    <van-cell-group>
+      <van-field value="{{ pj_content }}" type="textarea" placeholder="请输入评价内容" autosize border="{{ false }}" bind:change="pj_change" />
+    </van-cell-group>
+    <view class="pj_btn">
+      <van-button round type="danger" size="small" bindtap='pj_sub'>提交评论</van-button>
+    </view>
+  </view>  
+</view>
+
+<view class="pj_btn" wx:else >
+<van-button wx:if="{{drive_status}}" round type="danger" size="small" bindtap='shou_sub'>确认收货</van-button>
+</view>

@@ -1,0 +1,4 @@
+.H10{height: 20rpx;background-color: #f0f0f0;}
+.order{padding: 10rpx 20rpx 0;display: flex;line-height: 60rpx;justify-content: space-between;border-bottom: 2rpx solid #e0e0e0;}
+.order_r{color: #999999;}
+.sss{padding-right: 10rpx;}

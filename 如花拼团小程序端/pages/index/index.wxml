@@ -1,0 +1,40 @@
+<import src="../../tpls/footer/index.wxml"/>
+
+<navigator url="../search/index" hover-class="navigator-hover">
+  <view class="search"><image src="../../imgs/search.jpg" /></view>
+</navigator>
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{banner}}" wx:key="id">
+    <swiper-item>
+      <image src="{{item.imgs}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>  
+ 
+
+<view class="category">
+<view class="nav-item" wx:for="{{category}}" wx:key="category_id" bindtap='jump_category'
+ data-id="{{item.category_id}}">
+<image src="{{item.imgs}}" />
+<text>{{item.short_name}}</text>
+</view>
+</view>
+  
+
+
+<v-title title="拼团专区" url="../list/index?type=pt"></v-title>
+<view class="H20 white"></view>
+<view wx:for="{{products}}" wx:key="goods_id" >
+  <v-team-product wx:if="{{item.style==0}}" info="{{item}}" bind:gjump="jump_goods"></v-team-product>
+</view>
+ 
+<v-title title="商品专区" url="../list/index?type=product"></v-title>
+<view class="H20 white"></view> 
+<v-goods class_name="tag-b" list="{{products}}" catestyle="{{catestyle}}"></v-goods> 
+
+
+ 
+<template is="footer" data="{{current,cartnum}}" />
+ 

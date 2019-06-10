@@ -1,0 +1,70 @@
+.pay {
+  padding: 20rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+  background: #fff;
+}
+
+.pay_01 {
+  display: flex;
+  margin-bottom:30rpx;
+}
+
+.pay_01_01 {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #b1b1b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.pay_01_02 {
+  padding-left: 20rpx;
+}
+
+.pay_01_02_01 {
+  height: 40rpx;
+  overflow: hidden;
+}
+
+.pay_01_02_02 {
+  height: 40rpx;
+  overflow: hidden;
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+.pay_02 {
+  padding: 20rpx 0;
+  display: flex;
+  color: #a0a0a0;
+  justify-content: space-between;
+}
+
+.pay_03 {
+  display: flex;
+  justify-content: space-between;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1OEQ1MjgzODE1RTdFODExOUVBOTk4NzdCMkJGRkQ2QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4QkQzQTVCN0U3MTUxMUU4QkJEQjgyOTkyNTgwQkE5QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4QkQzQTVCNkU3MTUxMUU4QkJEQjgyOTkyNTgwQkE5QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU4RDUyODM4MTVFN0U4MTE5RUE5OTg3N0IyQkZGRDZDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU4RDUyODM4MTVFN0U4MTE5RUE5OTg3N0IyQkZGRDZDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+LulCRAAAADNJREFUeNpi/P//PwMtARMDjcGoBaMWjFpABwtYnjx58n80iIa3BYyj9cGoBaMWMAAEGAAlCgnWpnMqfQAAAABJRU5ErkJggg==) repeat-x center 10rpx;
+  background-size: 100% 10rpx;
+}
+
+.pay_03 image {
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.time-box{
+  display: flex;
+  flex-direction: row;
+}
+.time-box i-count-down{
+  margin:-8px 3px 0;
+  padding:0px;
+  height:24rpx;
+  line-height:24rpx;
+  color:#a0a0a0;
+}
+.H20{
+  height:20rpx;
+}

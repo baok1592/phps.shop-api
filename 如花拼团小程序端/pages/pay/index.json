@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "v-address": "../../../component/qy/order-detail/address/address", 
+    "van-panel": "../../../component/vant/panel/index",
+    "van-button": "../../../component/vant/button/index",
+    "van-card": "../../../component/vant/card/index",
+    "van-cell": "../../../component/vant/cell/index",
+    "van-field": "../../../component/vant/field/index",
+    "van-cell-group": "../../../component/vant/cell-group/index",
+    "van-submit-bar": "../../../component/vant/submit-bar/index",
+    "van-stepper": "../../../component/vant/stepper/index"
+  }
+}

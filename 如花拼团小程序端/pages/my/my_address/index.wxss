@@ -1,0 +1,11 @@
+ 
+.add {
+  position:fixed;
+  width: 100%;
+  background: #fff;
+  padding:20rpx 0;
+  bottom:0px;
+} 
+.H20{
+  height:20px;
+}

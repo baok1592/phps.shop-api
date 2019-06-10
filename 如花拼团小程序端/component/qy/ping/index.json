@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "i-count-down": "../../iview/count-down/index"
+  }
+}

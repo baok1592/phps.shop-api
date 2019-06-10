@@ -1,0 +1,18 @@
+page{
+  background: #F5F5F5;
+}
+.zhuanqu{
+  padding:30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:40%;
+}
+.list{
+  padding-top:30rpx;
+}
+.empty{
+  text-align: center;
+  font-size:30rpx;
+  padding-top: 80rpx;
+}

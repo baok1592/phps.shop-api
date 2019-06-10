@@ -1,0 +1,5 @@
+<view class='newlist'>
+  <view class='title'>{{title}}</view>
+  <view class='time'>{{create_time}}</view>
+  <view>{{content}}</view>
+</view>

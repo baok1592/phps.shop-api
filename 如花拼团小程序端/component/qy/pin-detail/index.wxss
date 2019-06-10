@@ -1,0 +1,13 @@
+
+.pin{margin-top: 20rpx;padding: 20rpx;background-color: #ffffff;display: flex;justify-content: center;flex-wrap: wrap;}
+.pin_01{text-align: center;font-size: 18px;line-height: 50rpx;width: 100%;}
+.pin_01 span{font-size: 20px;color: red;font-weight: bold;}
+.pin_02{width:73%;padding:20rpx 0 ;text-align: center;background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1OEQ1MjgzODE1RTdFODExOUVBOTk4NzdCMkJGRkQ2QyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4QkQzQTVCN0U3MTUxMUU4QkJEQjgyOTkyNTgwQkE5QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4QkQzQTVCNkU3MTUxMUU4QkJEQjgyOTkyNTgwQkE5QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU4RDUyODM4MTVFN0U4MTE5RUE5OTg3N0IyQkZGRDZDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU4RDUyODM4MTVFN0U4MTE5RUE5OTg3N0IyQkZGRDZDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+LulCRAAAADNJREFUeNpi/P//PwMtARMDjcGoBaMWjFpABwtYnjx58n80iIa3BYyj9cGoBaMWMAAEGAAlCgnWpnMqfQAAAABJRU5ErkJggg==) repeat-x center center;background-size: 100% 10rpx;}
+.pin_02_01{padding: 0 10rpx;background-color: #ffffff;margin: 0 23%;display: flex;}
+.pin_02_01 span{color: red;}
+.pin_03{width: 100%;text-align: center;padding: 20rpx 0;position: relative;}
+.pin_03 image{height: 95rpx;width: 95rpx;border-radius: 90rpx;margin: 0 20rpx;box-shadow: 2px 2px 10px silver;}
+.pin_04{width: 100%;}
+.view-wrap{
+  margin:-17px 10px 0;
+}

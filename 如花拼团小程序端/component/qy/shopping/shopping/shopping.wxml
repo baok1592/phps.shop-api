@@ -1,0 +1,20 @@
+<view class="shopping">
+  <view class="del" bindtap='del' data-id="{{key}}">删除</view>
+  <view class='shopping_01' bindtap='radiobox'>
+   <van-icon wx:if="{{scheck}}" size='16px' name="certificate" color="#FF7101" ></van-icon>
+    <van-icon wx:else name="check" size='16px'></van-icon>
+  </view>
+  <view class='shopping_02' bind:tap='jump'>
+    <image src='{{info.img}}'></image>
+  </view>
+  <view class='shopping_03'>
+    <view class='shopping_03_01'>{{info.goods_name}}</view>
+    <view class='shopping_03_01 guige' wx:if="{{info.sku_name}}">规格：{{info.sku_name}}</view>
+    <view class='shopping_03_02'>
+      <span>单价 ¥ {{info.price}}</span>
+      <view> 
+      <van-stepper value="{{ number }}" data-id="{{key}}" bind:change="onChange" />
+      </view>
+    </view>
+  </view> 
+</view>

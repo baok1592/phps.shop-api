@@ -1,0 +1,11 @@
+.add {
+  position: absolute;
+  bottom: 50rpx;
+  width: 100%;
+}
+.add button{
+  background: #E02E24;
+  color:#fff;
+  margin:0 20rpx;
+
+}

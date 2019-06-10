@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-stepper": "../../../component/vant/stepper/index",
+    "van-radio": "../../../component/vant/radio/index",
+    "van-radio-group": "../../../component/vant/radio-group/index",
+    "van-cell": "../../../component/vant/cell/index",
+    "van-cell-group": "../../../component/vant/cell-group/index",
+    "van-field": "../../../component/vant/field/index",
+    "van-button": "../../../component/vant/button/index"
+  }
+}

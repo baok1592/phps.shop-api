@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/index",
+    "pages/cart/index", 
+    "pages/goods/index",
+    "pages/goods_ct/index",
+    "pages/evaluate/index",
+    "pages/my/my_order_all/index",
+    "pages/my/my_order_one/index",
+    "pages/my/company/index",
+    "pages/my/company/article/index",
+    "pages/my/my_address/index",
+    "pages/my/my_favorite/index",
+    "pages/my/tui/index",
+    "pages/list/index",
+    "pages/search/index",
+    "pages/my/my_address/create_address/index",
+    "pages/pay/index",
+    "pages/pay_shopping/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E02E24",
+    "navigationBarTitleText": "如花拼团商城",
+    "navigationBarTextStyle": "#ffffff"
+  }
+}

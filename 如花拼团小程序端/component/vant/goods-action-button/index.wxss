@@ -1,0 +1,13 @@
+@import '../common/index.wxss';
+
+:host {
+  -webkit-flex: 1;
+  flex: 1;
+}
+.pintuan .text{
+  margin-top:12rpx;
+}
+.pintuan .text,.pintuan .price{
+  font-size:30rpx;
+  line-height: 40rpx;
+}

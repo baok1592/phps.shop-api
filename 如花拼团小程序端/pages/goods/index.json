@@ -1,0 +1,12 @@
+{
+  "usingComponents": {  
+    "van-goods-action": "../../../component/vant/goods-action/index",
+    "van-goods-action-icon": "../../../component/vant/goods-action-icon/index",
+    "van-goods-action-button": "../../../component/vant/goods-action-button/index",
+    "van-icon": "../../../component/vant/icon/index",
+    "v-oauth": "../../../component/qy/oauth/index",
+    "v-guige": "../../../component/qy/guige/index",
+    "v-ping": "../../../component/qy/ping/index"
+    
+  }
+}

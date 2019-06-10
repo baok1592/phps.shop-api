@@ -1,0 +1,2 @@
+.footer{display: flex;height: 100rpx;position: fixed;bottom: 0px;width: 100%;border-top: 2rpx solid #f0f0f0;background-color: #ffffff;}
+.footer_l{width: 33.33%;text-align: center;line-height: 12px;padding-top: 20rpx;font-size: 12px;}

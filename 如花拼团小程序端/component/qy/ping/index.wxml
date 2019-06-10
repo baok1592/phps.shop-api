@@ -1,0 +1,25 @@
+  
+  <view class='nearbg-title'>
+    <view >以下小伙伴正在发起团购，可直接参与</view>
+  </view>
+  <block wx:for="{{list}}">
+    <view class='nearbg'>
+      <view class='fl'><image src="{{item.user.headpic}}" /></view>
+      <view class='nearbg-infor fl'>
+        <view>{{item.user.nickname}}</view>
+        <!-- <view>上海</view> -->
+      </view>
+      <view wx:if="{{guige}}" class='nearbg-canquan fr' bindtap="ct_order" 
+      data-id="{{item.goods_id}}" data-tid="{{item.id}}" > 去参团 </view>
+    
+    
+      <view wx:else class='nearbg-canquan fr' bindtap="ct_show" data-index="{{index}}" > 去参团 </view>
+      <view class='fr'>
+        <view>还差{{item.item_people - item.into_people}}人成团</view>
+        <view class="view-wrap"> 
+          <i-count-down target="{{item.gq_time*1000}}" show-day="{{true}}" clear-timer="{{timeStop}}"></i-count-down>
+        </view> 
+      </view>
+      <view class='clear'></view>
+    </view>
+  </block> 

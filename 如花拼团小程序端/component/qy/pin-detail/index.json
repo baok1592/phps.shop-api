@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {     
+    "i-button": "../../iview/button/index", 
+    "i-count-down": "../../iview/count-down/index"
+  }
+}

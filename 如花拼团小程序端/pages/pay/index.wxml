@@ -1,0 +1,25 @@
+<view class="bg">
+  <view bindtap="jumpAddress">
+    <v-address address="{{address}}"></v-address>
+  </view>
+  <view class="white-block"></view>
+  <view>
+    <van-card price="{{price}}" desc="{{sku_name}}" title="{{goods_name}}" thumb="{{img}}" />
+  </view>
+
+  <view class="white-block"></view>
+  <view class="number">    
+  <text>数量</text>
+   <van-stepper value="{{num}}" max="{{xianzhi}}" bind:change="onNumber" />
+  </view>
+  <van-cell-group>
+    <van-cell wx:if="{{shopping_fee>0}}" title="运费" value="{{shopping_fee}} 元" />
+    <van-cell wx:else title="运费" value="免运费" />
+    <van-field  bind:change="onMsg" value="{{ message }}" label="留言" type="textarea" placeholder="请输入留言"  />
+  </van-cell-group>
+
+
+  <van-submit-bar   price="{{total}}" button-text="去支付" bind:submit="onPay" />
+</view>
+
+ 

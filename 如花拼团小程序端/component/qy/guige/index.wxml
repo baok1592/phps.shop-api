@@ -1,0 +1,37 @@
+<view wx:if="{{start}}">
+  <v-black></v-black>
+  <view class='bottom'>
+    <view class='guige'>
+      <view class='guige_01'>
+        <view class='guige_01_01'>
+          <image src='{{goods.imgs.url}}'></image>
+        </view>
+        <view class='guige_01_02'>
+          <view class='guige_01_02_01'>{{goods.goods_name}}</view>
+          <view class='guige_01_02_02'>¥{{price}}</view>  
+        </view>
+      </view>
+      <view class='guige_02'>属性：</view>
+        
+      <view class='guige_03'>
+        <view wx:for="{{goods.sku}}" wx:key="sku_id">
+          <view class="guige_03_01 {{sku_index==index?'red':''}}" bindtap='selectSku' data-id="{{index}}">{{item.sku_name}}</view>
+        </view> 
+      </view>
+
+      <view class='guige_07' wx:if="{{set_number}}">
+        <view>购买数量</view>
+        <view>1234</view>
+      </view>
+      <view class='icon'>
+        <i-icon type="delete" size='20' bindtap='shut' />
+      </view>
+    </view>
+    <view class='shopping'>
+      <i-button bind:click="createOrder" type="error" long="true">
+        <text wx:if="{{goods.style==0}}">提交订单</text> 
+        <text wx:if="{{goods.style==1}}">加入购物车</text>
+      </i-button>      
+    </view>
+  </view>
+</view>

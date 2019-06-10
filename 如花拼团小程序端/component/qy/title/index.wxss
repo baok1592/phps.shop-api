@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20rpx 14rpx;
+  height:70rpx;
+  margin-top: 30rpx; 
+  border-bottom:4rpx solid #ed3f14;
+  background: #fff;
+}
+.title{
+  border-left:8rpx solid #D6360F;
+  text-indent: 18rpx;
+  font-weight: bold;
+  color:#333;
+  font-size:32rpx;
+}
+.more{  
+  font-size:28rpx;
+}

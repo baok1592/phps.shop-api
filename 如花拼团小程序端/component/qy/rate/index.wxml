@@ -1,0 +1,21 @@
+
+<view wx:if="{{evaluate_status}}"> 
+ <wux-cell title="评价" hover-class="none"> 
+      <wux-rater slot="footer" default-value="{{rate.rate}}" disabled />
+    </wux-cell> 
+  <van-cell-group>
+    <van-field value="{{rate.content }}" type="textarea" disabled autosize border="{{ false }}"/>
+  </van-cell-group> 
+  </view>  
+  
+<view wx:else> 
+ <wux-cell title="评价" hover-class="none"> 
+      <wux-rater slot="footer" default-value="0" bind:change="rate_fun" />
+    </wux-cell> 
+  <van-cell-group>
+    <van-field value="{{ pj_content }}" type="textarea" placeholder="请输入评价内容" autosize border="{{ false }}" bind:change="pj_change" />
+  </van-cell-group>
+  <view class="pj_btn" >
+    <van-button round type="danger" size="small" bindtap='pj_sub'>提交评论</van-button>
+  </view>
+  </view> 

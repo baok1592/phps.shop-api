@@ -1,0 +1,10 @@
+.number{
+  height:100rpx;
+  border-top:1px solid #ccc; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: right;
+  line-height: 100rpx;
+  padding:0 30rpx;
+}

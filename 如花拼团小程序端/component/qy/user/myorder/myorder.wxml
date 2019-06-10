@@ -1,0 +1,24 @@
+<view class='myorder'>
+  <view class='more'>
+    <view class='more_l'>我的订单</view>
+    <view class='more_r' bindtap='jump'>查看全部订单 <text decode="{{true}}">&nbsp;</text>></view>
+  </view>
+  <view class='state'>
+    <view class='state_01' bindtap='all'>
+      <view><i-icon type="service" size="32" /></view>
+      <view class="info" >所有订单</view>
+    </view>
+    <view class='state_01' bindtap='pay'>
+      <view><i-icon type="commodity" size="32" /></view>
+      <view class="info">待付款</view>
+    </view> 
+    <view class='state_01' bindtap='drive'>
+      <view><i-icon type="task" size="32" /></view>
+      <view class="info">待发货</view>
+    </view>
+    <view class='state_01' bindtap='end'>
+     <view><i-icon type="tasklist" size="32" /></view>
+      <view class="info" >已发货</view>
+    </view>
+  </view>
+</view>

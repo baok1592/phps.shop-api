@@ -1,0 +1,28 @@
+<!-- <view class="number">    
+   <text>数量</text>
+   <van-stepper value="{{num}}" max="{{xianzhi}}" bind:change="onNumber" />
+</view> -->
+<view class="number">    
+   <text>金额</text>
+   <span>¥{{total}}</span>
+</view>
+<view class='tkyy'>退款原因</view>
+<van-radio-group value="{{ radio }}">
+  <van-cell-group>
+    <van-cell wx:for="{{yy}}" wx:key="index" title="{{item}}" data-name="{{index}}" bind:click="radio">
+      <van-radio name="{{index}}" /> 
+    </van-cell>
+  </van-cell-group>
+</van-radio-group>
+<view class='tksm'>退款说明<span>(可不填)</span></view>
+<van-cell-group>
+  <van-field
+    value="{{ content }}"
+    type="textarea"
+    placeholder="请输入说明"
+    autosize
+    border="{{ false }}"
+    bind:input="content"
+  />
+</van-cell-group>
+<view class='btn'><van-button type="danger" block bind:tap="sub">提交退款申请</van-button></view>

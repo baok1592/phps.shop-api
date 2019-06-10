@@ -1,0 +1,3 @@
+.newlist{padding: 30rpx 40rpx;}
+.title{font-size: 32rpx;text-align: center;}
+.time{color: #ccc9c9;text-align: center;padding:10rpx 10rpx 20rpx;}

@@ -1,0 +1,19 @@
+<view class='pin'>
+  <view class='pin_01'>还差<span> {{item.item_people - item.into_people}} </span>人，快来一起拼团吧</view>
+  <view class='pin_02'>
+    <view class='pin_02_01'>
+      剩余
+      <span>  
+        <view class="view-wrap">          
+          <i-count-down target="{{item.gq_time*1000}}" clear-timer="{{clearTimer}}"></i-count-down>
+        </view>
+      </span>
+      结束
+    </view>
+  </view>
+  <view class='pin_03'>
+    <image src='{{item.user.headpic}}'></image> 
+    <view class='pin_03_02'><i-tag class="i-tags" name="单个标签" color="red">团长</i-tag></view>
+  </view>
+  <view class='pin_04'><i-button bind:click="xiadan" type="error" shape="circle">我要参团</i-button></view>  
+</view>

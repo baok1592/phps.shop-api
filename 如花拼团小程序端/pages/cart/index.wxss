@@ -1,0 +1,10 @@
+.line{
+  border-bottom:1px dashed #ccc;
+  margin:30rpx 0;
+}
+.H60{
+  height:120rpx;
+}
+.H40{
+  height:60rpx;
+}

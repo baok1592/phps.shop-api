@@ -1,0 +1,13 @@
+page{background-color: #F6F6F6;}
+.zhpf{background-color: #fff;display: flex;justify-content: space-between;padding: 10px;}
+.zhpf_l{display: flex;}
+.zhpj_l_01{padding: 5px 10px 0 0 ; }
+.zhpf_r{color: #FFB91E;padding-top: 5px;}
+.btn{padding: 0 10px 10px;background-color: #fff;display: flex;}
+.btn_1{padding-right: 10px;}
+.con{background-color: #fff;padding: 10px;line-height: 30px;}
+.con_1{display: flex;justify-content: space-between;}
+.con_1_l{display: flex;}
+.con_1_l image{height: 30px;width: 30px;border-radius: 30px;margin-right: 10px;}
+.con_1_r{color: #B3B3B3;font-size: 12px;}
+.con_2{padding-top: 5px;}

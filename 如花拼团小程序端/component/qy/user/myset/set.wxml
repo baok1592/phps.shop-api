@@ -1,0 +1,30 @@
+<view class="set">
+  <view class='set_01'>
+     <view><icon type="success" size='25' class='sss'></icon></view>
+     <view>待付款</view>
+  </view>
+  <view class='set_01'>
+     <view><icon type="success" size='25' class='sss'></icon></view>
+     <view>待付款</view>
+  </view>
+  <view class='set_01'>
+     <view><icon type="success" size='25' class='sss'></icon></view>
+     <view>待付款</view>
+  </view>
+  <view class='set_01'>
+     <view><icon type="success" size='25' class='sss'></icon></view>
+     <view>待付款</view>
+  </view>
+  <view class='set_01'>
+     <view><icon type="success" size='25' class='sss'></icon></view>
+     <view>待付款</view>
+  </view>
+  <view class='set_01'>
+     <view><icon type="success" size='25' class='sss'></icon></view>
+     <view>待付款</view>
+  </view>
+  <view class='set_01'>
+     <view><icon type="success" size='25' class='sss'></icon></view>
+     <view>待付款</view>
+  </view>
+</view>

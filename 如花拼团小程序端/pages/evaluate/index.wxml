@@ -1,0 +1,28 @@
+<view class="zhpf">
+  <view class='zhpf_l'>
+    <view class='zhpj_l_01'>综合评分</view>
+    <i-cell title="禁用点击和手势选择星">
+        
+    </i-cell>
+  </view>
+  <view class='zhpf_r'>99%好评率</view>
+</view>
+<!-- <view class='btn'>
+  <view class='btn_1'><van-button plain type="primary" size="small">全部</van-button></view>
+  <view class='btn_1'><van-button plain type="danger" size="small">好评</van-button></view>
+</view> -->
+<block wx:for="{{list}}" wx:key="id">
+  <view class='H20'></view>
+  <view class='con'>
+    <view class='con_1'>
+      <view class='con_1_l'>
+        <image src='{{item.user.headpic}}'></image>
+        <view class='name'>{{item.user.nickname}}</view>
+      </view>
+      <view class='con_1_r'>{{item.create_time}}</view>
+    </view>
+    <view class='con_2'>{{item.content}}</view>
+  </view>
+</block>
+ 
+

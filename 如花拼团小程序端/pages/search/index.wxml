@@ -1,0 +1,13 @@
+<wux-search-bar clear show-cancel value="{{ value }}" controlled placeholder="搜索" bind:change="onChange"  bind:blur="onBlur"   bind:cancel="onCancel" />
+
+<view class="zhuanqu" wx:if="{{twobtn}}">
+<van-button type="default" size="small" bind:click="jump_pt" >拼团专区</van-button>
+<van-button type="default" size="small" bind:click="jump_pd" >商品专区</van-button>
+</view>
+
+<view class="list" wx:if="{{num>0}}">
+<v-goods list="{{list}}" class_name="{{flag=='pt'?'tag-a':'tag-b'}}"></v-goods>
+</view>
+<view wx:else>
+<view class="empty">无结果</view>
+</view>

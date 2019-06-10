@@ -1,0 +1,13 @@
+<import src="../../tpls/footer/index.wxml"/>
+
+<v-user-head userinfo="{{userinfo}}"></v-user-head>
+<v-user-myorder  bind:orderjump="orderjump" url="{{url}}"></v-user-myorder>  
+<view class="white-block"></view>
+<van-cell-group>
+  <van-cell title="我的收藏" icon="like-o" is-link url="my_favorite/index" />   
+  <van-cell title="我的地址" icon="location" is-link url="my_address/index" />   
+  <van-cell title="关于" icon="contact" is-link url="company/index" /> 
+</van-cell-group>
+
+<v-oauth login="{{login}}" bind:userinfo="GetUserInfo"></v-oauth>
+<template is="footer" data="{{current,cartnum}}" />

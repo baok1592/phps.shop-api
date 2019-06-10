@@ -1,0 +1,15 @@
+.number{
+  height:100rpx;
+  border-bottom:1px solid #ccc; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: right;
+  line-height: 100rpx;
+  padding:0 30rpx;font-size: 16px;
+}
+.number span{color: #FE8506;}
+.tkyy{background-color: #EFEFEF;padding-left: 20rpx;height: 70rpx;line-height: 70rpx;font-weight: bold;}
+.tksm{font-weight: bold;background-color: #EFEFEF;padding-left: 20rpx;height: 70rpx;line-height: 70rpx;}
+.tksm span{color:#999999;font-size: 12px;}
+.btn{padding: 40px 20px;}

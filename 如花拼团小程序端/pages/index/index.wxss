@@ -1,0 +1,47 @@
+page{
+  background: #F5F5F5;
+}
+.blue{
+  color:blue !important;
+}
+swiper{
+  height:360rpx;
+} 
+.slide-image{
+  width:100%;
+  height:360rpx;
+}
+.category{
+  display: flex;
+  flex-direction: row;  /*主轴排列方向*/
+  flex-wrap:wrap;  /*交叉轴排列方向*/
+  justify-content:space-around; /*主轴上对齐方式*/
+  margin-top:30rpx;
+  background: #fff;
+}
+.category .nav-item{ 
+  display: flex;
+  flex-direction: column; 
+  align-items:center; 
+  padding:18rpx 0;
+  font-size:28rpx;
+  width:22%;  
+}
+.category .nav-item image{
+  width: 80%;
+  height: 120rpx;
+  border-radius:10rpx; 
+}
+.category .nav-item text{
+  height:40rpx;
+  overflow: hidden; 
+}
+.title-hh{
+  font-size:30rpx;
+  font-weight: bold;
+  color:#444;
+}
+.title-hh image{
+  height:70rpx;
+} 
+

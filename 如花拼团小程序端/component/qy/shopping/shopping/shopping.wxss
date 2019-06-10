@@ -1,0 +1,63 @@
+.shopping {
+  display: flex;
+  position: relative;
+  padding: 20rpx 0 20rpx 20rpx;
+}
+
+.shopping_01 {
+  line-height: 160rpx;
+  width: 9%;
+}
+
+.shopping_02 {
+  width: 23%;
+}
+
+.shopping_02 image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.shopping_03 {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  padding-left: 20rpx;
+  box-sizing: box;
+  line-height: 40rpx;
+  text-align: left;
+}
+
+.shopping_03 span {
+  color: #ff7101;
+}
+
+.shopping_03_01 {
+  height: 30rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+  width:100%;
+}
+
+.shopping_03_02 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:96%;
+  height: 30rpx; 
+}
+.guige{
+  color:#777;
+}
+.del{
+  position: absolute;
+  display: inline-block;
+  right:5px;
+  top:-7px;
+  background: #888;
+  color:#fff;
+  width:100rpx;
+  line-height: 40rpx;
+  text-align: center;
+}

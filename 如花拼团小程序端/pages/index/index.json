@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-tab-bar": "../../component/iview/tab-bar/index",
+    "i-tab-bar-item": "../../component/iview/tab-bar-item/index",
+    "v-team-product": "../../component/qy/t-product/index",
+    "v-title": "../../component/qy/title/index", 
+    "v-goods": "../../component/qy/goods/big"
+  }
+}

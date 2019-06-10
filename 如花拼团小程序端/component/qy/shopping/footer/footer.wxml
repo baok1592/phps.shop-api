@@ -1,0 +1,13 @@
+<view class='footer'>
+  <view class='footer_01' bindtap='select'>
+    <view class='footer_01_01'>
+    <van-icon wx:if="{{scheck}}" name="certificate" color="#FF7101" ></van-icon>
+    <van-icon wx:else name="check" ></van-icon>
+    </view>
+    <view  class='footer_01_02' >全选</view>
+  </view>
+  <view class='footer_02'>
+    <view class='footer_02_01'>合计: <span>¥ {{price}}</span></view>
+    <view class='footer_02_02' bindtap='submit'>结算</view>
+  </view>
+</view>

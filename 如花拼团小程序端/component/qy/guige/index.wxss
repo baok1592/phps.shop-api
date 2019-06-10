@@ -1,0 +1,70 @@
+.bottom {
+  position: fixed;
+  bottom: 0px;
+  z-index: 999;
+  width: 100%;
+  background: #fff;
+}
+
+.guige {
+  padding: 20rpx;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 25rpx;
+  top: 10rpx;
+}
+
+.guige_01 {
+  display: flex;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+
+.guige_01_01 image {
+  height: 120rpx;
+  width: 120rpx;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+}
+
+.guige_01_02_01 {
+  height: 80rpx;
+  overflow: hidden;
+  padding-top: 5rpx;
+}
+
+.guige_01_02_02 {
+  color: red;
+}
+
+.guige_02 {
+  line-height: 60rpx;
+  padding-top: 10rpx;
+}
+
+.guige_03 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom:50rpx;
+}
+
+.guige_03_01 {
+  margin: 10rpx;
+  border: 2rpx solid #cdcdcd;
+  padding: 10rpx 20rpx;
+}
+
+.red {
+  border: 2rpx solid red;
+  color: red;
+}
+
+.guige_07 {
+  margin-top: 30rpx;
+  border-top: 2rpx solid #f1f1f1;
+  padding: 40rpx 0rpx;
+  display: flex;
+  justify-content: space-between;
+}

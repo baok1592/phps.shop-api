@@ -1,0 +1,10 @@
+{
+  "usingComponents": { 
+    "wux-cell-group": "../../../../component/wux/cell-group/index",
+    "wux-cell": "../../../../component/wux/cell/index",
+    "wux-cascader": "../../../../component/wux/cascader/index",
+    "van-field": "../../../../component/vant/field/index",
+    "i-button": "../../../../component/iview/button/index"
+
+  }
+}

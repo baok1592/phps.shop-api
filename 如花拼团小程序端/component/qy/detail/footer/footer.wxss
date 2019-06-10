@@ -1,0 +1,4 @@
+.footer{display: flex;height: 100rpx;position: fixed;bottom: 0px;width: 100%;border-top: 2rpx solid #f0f0f0;background-color: #ffffff;}
+.footer_01{width: 20%;text-align: center;padding-top: 10rpx;}
+.footer_03{width: 30%;background-color: #F5A623;color: #ffffff;line-height: 100rpx;text-align: center;font-size: 16px;}
+.footer_04{width: 30%;background-color: #FF7100;color: #ffffff;line-height: 100rpx;text-align: center;font-size: 16px;}

@@ -1,0 +1,7 @@
+<view class="login-box" wx:if="{{login}}">
+    <view class="t1">授权登陆</view>
+    <view class="t2">
+    <image src="wx.png" /><view>申请获取以下权限</view></view>
+    <view class="t3">获得你的公开信息(名称、头像)</view>
+    <view class="t4"><button size="mini" open-type="getUserInfo" bindgetuserinfo="updateUserInfo">授权登陆</button></view>
+</view>

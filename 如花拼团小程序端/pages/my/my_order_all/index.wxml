@@ -1,0 +1,30 @@
+<i-tabs current="{{ current }}" bindchange="change_tab">
+    <i-tab key="0" title="所有订单"></i-tab>
+    <i-tab key="1" title="待付款"></i-tab>
+    <i-tab key="2" title="待发货"></i-tab>    
+    <i-tab key="3" title="待收货"></i-tab>
+    <i-tab key="4" title="已完成"></i-tab>
+</i-tabs> 
+ 
+<block wx:for="{{list}}" wx:key="order_id">
+    <van-panel 
+    wx:if="{{current==0 || (item.pay_status==pay && item.drive_status==drive && item.receive_status==receive) }}"
+     title="订单编号：{{item.order_num}}" status="{{item.tui_status==1?'已退款':'' }}" use-footer-slot>
+      <view>
+        <van-card num="{{item.ordergoods[0].num}}" price="{{item.ordergoods[0].price}}" desc="{{item.ordergoods[0].sku_name}}" title="{{item.ordergoods[0].goods_name}}" 
+        thumb="{{item.imgs}}" tag="{{item.type>0?'拼团':''}}" thumb-link="../my_order_one/index?id={{item.order_id}}" />  
+      </view>
+      <view slot="footer"> 
+
+        <van-button size="small" wx:if="{{item.pay_status && item.drive_status && !item.receive_status}}">查看物流</van-button>
+         <van-button size="small" type="warning" bindtap="jump" data-id="{{item.order_id}}" wx:if="{{item.pay_status && item.receive_status && !item.evaluate_status}}">评价</van-button>
+        <van-button size="small" bindtap="onPay" data-id="{{item.order_id}}" type="danger" 
+        wx:if="{{item.pay_status==0}}">去支付</van-button>
+        <van-button size="small" bindtap="jump" data-id="{{item.order_id}}">订单详情</van-button>
+          
+      </view>
+    </van-panel>  
+</block>     
+
+ 
+   

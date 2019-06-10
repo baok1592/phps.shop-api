@@ -1,0 +1,107 @@
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='g'>
+    <view class='g-price'>
+      <view class='fl'>
+        <text>¥{{goods.price}}</text>￥{{goods.market_price}}</view>
+      <view class='fr'>销量：{{goods.sales}}件 · {{goods.people}}人团</view>
+      <view class='clear'></view>
+    </view>
+    <view class='clear'></view>
+    <view>
+      <view class='fl g-name'>{{goods.goods_name}}</view>
+      <view class='fr g-share'>
+        <button open-type="share" class="share">
+          <van-icon name="share" size="40rpx" />
+          <view>分享</view>
+        </button>
+      </view>
+      <view class='fr g-dian'>
+
+      </view>
+      <view class='clear'></view>
+    </view>
+
+  </view>
+  <view class='fuwu' bindtap="service">
+    <view class='fuwu-l'>
+      <icon type="success" size="10" color="#fff" /> 全场包邮</view>
+    <view class='fuwu-l'>
+      <icon type="success" size="10" color="#fff" /> 7天退换</view>
+    <view class='fuwu-l'>
+      <icon type="success" size="10" color="#fff" /> 48小时发货</view>
+    <view class='fuwu-l'>
+      <icon type="success" size="10" color="#fff" /> 假一赔十 </view>
+    <text>></text>
+  </view>
+  <view class='H10'></view>
+  
+ <!-- ----------------参团-------------------- -->
+  <v-ping wx:if="{{goods.style==0}}" list="{{team}}" bind:cantuan="Cantuan_auth"></v-ping>
+ <!-- ----------------参团-------------------- -->
+
+
+  <view class='H10'></view>
+   <view class='evaluate'>
+    <view class='eva_tit'>
+      <view class='eva_tit_l'>商品评价({{goods.rate_num}})</view>
+      <view class='eva_tit_r'>
+        <navigator url="/pages/evaluate/index?id={{goods.goods_id}}" ><span>99%</span>好评 </navigator>
+        <view style='margin-top:2px;'><van-icon name="arrow" class='sss' /></view>
+      </view>
+    </view>
+    <view class='eva_con' wx:for="{{goods.rates}}" wx:key="id">
+      <view class='eva_con_01'>
+        <image src='{{item.user.headpic}}' />
+        <view>{{item.user.nickname}}</view>
+      </view>
+      <view class='eva_con_02'>{{item.content}}</view>
+      <!-- <view class='eva_con_03'>规格：默认</view> -->
+    </view> 
+    <view class='more'>
+      <navigator url = "/pages/evaluate/index?id={{goods.goods_id}}" style='display: flex;'>
+        查看更多评价 
+        <view style='margin-top:3px;display: inline;color:#A1A1A1;'><van-icon name="arrow" class='sss' /></view>
+      </navigator>
+    </view>
+  </view>
+  <view class='H10'></view>
+  <view class='mall-infor'>
+
+    <view> 
+ <import src="../../lib/wxParse/wxParse.wxml"/>
+ <template is="wxParse" data="{{wxParseData:contents.nodes}}"/>
+    </view>
+ 
+    <view class="H40"></view>
+  </view>
+</view>
+
+
+<van-goods-action>
+  <navigator url="../index/index" open-type="reLaunch">
+    <van-goods-action-icon icon="shop" text="首页" />
+  </navigator>
+  <van-goods-action-icon color="{{favorite==1?'red':''}}" icon="{{favorite==1?'like':'like-o'}}" text="收藏" bind:click="onFavorite" />
+  <navigator url="../cart/index" open-type="redirect">
+    <van-goods-action-icon icon="cart" wx:if="{{goods.style==1}}" text="购物车" bind:click="jump_cart" />
+  </navigator>
+  <van-goods-action-button wx:if="{{goods.style==0}}" text="单独购买" price="{{goods.only_price}}" type="warning" bind:click="OnlyShopping" />
+  <van-goods-action-button wx:if="{{goods.style==0}}" text="{{goods.people}}人团" price="{{goods.price}}" bind:click="onPinTuan" />
+  <van-goods-action-button wx:if="{{goods.style==1}}" text="加入购物车" bind:click="intoCart" type="warning" />
+  <van-goods-action-button wx:if="{{goods.style==1}}" text="立即购买" bind:click="Shopping" />
+</van-goods-action>
+
+
+
+<v-guige start="{{skubox}}" price="{{sku_price}}" goods="{{goods}}" only='{{only}}' bind:trigger="selectSku"></v-guige>
+<!-- 规格 -->
+<v-oauth login="{{login}}" bind:userinfo="GetUserInfo"></v-oauth>
+<!-- 授权 -->

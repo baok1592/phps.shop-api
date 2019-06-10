@@ -1,0 +1,10 @@
+<import src="../../tpls/footer/index.wxml"/>
+  <view class="H40"></view>
+  <block wx:for="{{list}}" wx:key=""> 
+    <v-cart-list info="{{item}}" number="{{c_number}}" scheck="{{scheck}}" key="{{index}}" bind:snumber="snumber" bind:del="del" bind:radiobox="radiobox" bind:jump_product="jump_product"></v-cart-list>
+    <view class="line"></view>
+  </block>
+  <view class="H60"></view>
+  <v-cart-footer price="{{total_price}}" scheck="{{scheck}}" bind:onselect="onselect" bind:sub="sub"></v-cart-footer>
+
+<template is="footer" data="{{current,cartnum}}" />

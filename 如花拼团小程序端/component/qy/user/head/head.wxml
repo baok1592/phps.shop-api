@@ -1,0 +1,13 @@
+<view class='{{class_name}}'>
+  <view class='head'>
+    <view wx:if="{{userinfo.avatarUrl}}"><image src='{{userinfo.avatarUrl}}'></image></view>
+    <view wx:else><image src='imgs/user_avatar.png' /></view>
+    <view class='name'>
+      <view class='head_n'>
+        <text wx:if="{{userinfo.nickName}}">{{userinfo.nickName}}</text>
+        <text wx:else>名字</text>
+      </view>
+      <view class='head_l'>普通会员</view>
+    </view>
+  </view>
+</view>

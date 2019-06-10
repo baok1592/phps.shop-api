@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wux-steps": "../../../wux/steps/index",
+    "wux-step": "../../../wux/step/index",
+    "i-count-down": "../../../iview/count-down/index"
+  }
+}

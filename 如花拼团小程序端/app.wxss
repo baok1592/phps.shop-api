@@ -1,0 +1,39 @@
+ 
+page{
+  font-size:28rpx; 
+  background: #ffffff;
+  padding-bottom:120rpx;
+}  
+.grey-block{
+  height:30rpx;
+  background: #F5F5F5;
+  margin:12rpx 0;
+}
+.white-block{
+  height:30rpx;
+  background: #ffffff;
+  margin:12rpx 0;
+}
+.H20{
+  height: 20rpx;
+}
+.white{
+  background: #fff;
+}
+.search{
+  height:90rpx;
+  background: #fff;
+}
+.search image{
+  width:97%;
+  height:100%;
+}
+.share{  
+  padding: 0 !important;
+  border:none !important;
+  background: none; 
+  color:#666;
+}
+.share::after {
+  border: 0;
+} 

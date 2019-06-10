@@ -1,0 +1,15 @@
+<import src="../../tpls/footer/index.wxml"/>
+
+<view class="top">
+<i-tabs current="{{ current_scroll }}" scroll bindchange="handleChangeScroll">
+    <i-tab wx:for="{{category_list}}" wx:key="category_id" key="{{item.category_id}}" title="{{item.category_name}}"></i-tab> 
+</i-tabs>
+
+</view>
+
+<view class="list">
+<v-goods list="{{list}}" catestyle="{{catestyle}}" class_name="{{flag=='pt'?'tag-a':'tag-b'}}"></v-goods>
+</view>
+ 
+
+<template is="footer" data="{{current,cartnum}}" />

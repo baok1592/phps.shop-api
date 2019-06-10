@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "wux-search-bar": "../../component/wux/search-bar/index",
+    "van-button": "../../component/vant/button/index",
+    "v-goods": "../../component/qy/goods/big"
+    
+  }
+}

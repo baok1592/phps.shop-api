@@ -1,0 +1,7 @@
+<view class="index">
+  <view class="index_01"><image src="imgs/r51.jpg" /></view>
+  <view class="index_02">
+    <view><image src="imgs/c9.jpg" /></view>
+    <view><image src="imgs/c9.jpg" /></view>
+  </view>
+</view>

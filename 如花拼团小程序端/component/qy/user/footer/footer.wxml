@@ -1,0 +1,14 @@
+<view class="footer">
+  <view class='footer_l'>
+    <icon type="success" size='15'></icon>
+    <view>首页</view>
+  </view>
+  <view class='footer_l'>
+    <icon type="success" size='15'></icon>
+    <view>订单</view>
+  </view>
+  <view class='footer_l'>
+    <icon type="success" size='15'></icon>
+    <view>我的</view>
+  </view>
+</view>

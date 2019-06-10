@@ -1,0 +1,3 @@
+<van-cell-group>
+  <van-cell wx:for="{{list}}" wx:key="id" title="{{item.title}}" is-link url="article/index?id={{item.id}}" />   
+</van-cell-group>

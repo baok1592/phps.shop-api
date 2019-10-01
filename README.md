@@ -1,6 +1,9 @@
 
 ![image](http://www.phps.shop/img/xcx.png)
 
+**目前是TP5+VUE+小程序，下个版本改为TP5+Uniapp**
+
+
 API端配置
 
 1、config/setting.php
@@ -12,8 +15,6 @@ API端配置
 4、图片访问路径前缀- extend/Uedit/config下imageUrlPrefix
 
 5、数据表sys_config的参数--可通过CMS端配置
-
-**下个版本一定要弄成后台配置所有参数**
 
 
 CMS端配置

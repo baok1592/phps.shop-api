@@ -1,6 +1,7 @@
 
 ####	此项目已转移到新仓库：https://github.com/baok1592/ruhua
 
+QQ群：425462686
 
 **TP5+VUE+原生小程序**
 API端配置
